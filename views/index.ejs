@@ -1,0 +1,44 @@
+<!-- index.ejs -->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>top</title>
+  <style>
+    body{
+        background: rgba(31, 6, 222, 0.8);
+    }
+    h1, h3 { 
+	    background-color: rgb(23, 210, 223);
+    }
+    </style>
+</head>
+
+<body>
+  <h1 span style="color: rgb(115, 10, 10)">奇跡体験！<span style="color: rgb(252, 197, 1)">アンビリバボー</h1>
+  <h3><a href="https://twitter.com/kiseki_unb">このアカウントを参考にして作成しました。@kiseki_unb</a></h3><br>
+  <button class="ki">奇</button>
+  <button class="seki">跡</button>
+  <button class="tai">体</button>
+  <button class="kenn">験</button>
+  <button class="exclamation">！</button>
+  <button class="a">ア</button>
+  <button class="nn">ン</button>
+  <button class="bi">ビ</button>
+  <button class="ri">リ</button>
+  <button class="ba">バ</button>
+  <button class="bo">ボ</button>
+  <button class="mark">ー</button>
+  <button class="delete">全削除</button>
+  <button class="r">ランダム</button>
+  <ul class = "user-list">
+    <% for (const user of users) { %>
+      <li class = "user-name"><%= user %></li>
+    <% } %>
+  </ul>
+  <script src="/static/index.js" defer></script>
+</body>
+
+</html>
